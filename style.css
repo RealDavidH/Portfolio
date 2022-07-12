@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    display: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+#landing, #about{
+    height: 100vh;
+}
+
+/* Dark background color:#252934, Light Blue: #04c2c9, Pink: #e31b6d */
+
+#landing{
+    background-color: #252934;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 32pt;
+    line-height: 36pt;
+}
+
+
+#about{
+    background-color: white;
+}
+
+
+.name{
+    color: #e31b6d;
+}
+
+
+.btn-light{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: inherit;
+    border: solid white 2px;
+    margin-top: 10px;
+    padding: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 16pt;
+}
+
+.btn-light:hover{
+    background-color: #04c2c9;
+    border-color: #04c2c9;
+}
+
+.btn-light:hover .arrow{
+    transform: rotate(90deg);
+}
+
+
+.arrow{
+    transition: 0.5s;
+    fill: white;
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+}
