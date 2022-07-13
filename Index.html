@@ -11,14 +11,23 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
     </head>
     <body>
-        <div class="overflow-hidden">
+        <div class="overHidden">
             <!-- Landing -->
-            <section id="landing">
-                <p class="name">David Hollinger</p>
-                <p>Full Stack Web Developer</p>
-                <button class="btn-light">Learn About me  
-                    <img class="arrow" src="Assets/Svg/arrow.svg">
-                </button>
+            <section id="landing" class="flex">
+                <div class="canvas">
+                    <canvas id="canvas"></canvas>
+                </div>
+                <div class="text-1">Welcome</div>
+
+                <div class="landingText flex">
+                    <div class="text-2">I am</div>
+                    <div class="flex text-3">
+                        <p class="name">David Hollinger</p>
+                        <p>Full Stack Web Developer</p>
+                        <a class="btn-light" href="#about">Check out my work<img class="arrow" src="Assets/Svg/arrow.svg" />
+                        </a>
+                    </div>
+                </div>
             </section>
             <!-- About  -->
             <section id="about">
@@ -30,4 +39,5 @@
             <section id="contact"></section>
         </div>
     </body>
+    <script src="script.js"></script>
 </html>

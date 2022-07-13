@@ -1,10 +1,15 @@
 *{
     margin: 0;
     padding: 0;
-    display: border-box;
     font-family: 'Raleway', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 
+a{
+    
+}
 
 #landing, #about{
     height: 100vh;
@@ -14,13 +19,11 @@
 
 #landing{
     background-color: #252934;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     color: white;
     font-size: 32pt;
     line-height: 36pt;
+    text-align: center;
+    position: relative;
 }
 
 
@@ -28,11 +31,13 @@
     background-color: white;
 }
 
-
-.name{
-    color: #e31b6d;
+.arrow{
+    transition: 0.5s;
+    fill: white;
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
 }
-
 
 .btn-light{
     display: flex;
@@ -41,8 +46,9 @@
     color: white;
     background-color: inherit;
     border: solid white 2px;
+    text-decoration: none;
     margin-top: 10px;
-    padding: 10px;
+    padding: 0px 5px 0px 5px;
     transition: 0.5s;
     cursor: pointer;
     font-size: 16pt;
@@ -57,11 +63,49 @@
     transform: rotate(90deg);
 }
 
-
-.arrow{
-    transition: 0.5s;
-    fill: white;
-    height: 20px;
-    width: 20px;
-    margin-left: 10px;
+.canvas{
+    z-index: 1;
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
 }
+
+.name{
+    color: #e31b6d;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.landingText{
+    z-index: 2;
+    position: absolute;
+    opacity: 1;
+}
+.overHidden{
+    overflow-x: hidden;
+}
+.text-1{
+    z-index: 2;
+    position: absolute;
+    font-size: inherit;
+    line-height: inherit;
+    opacity: 0;
+}
+.text-2{
+    font-size: inherit;
+    line-height: inherit;
+    z-index: 2;
+    opacity: 0;
+}
+.text-3{
+    opacity: 0;
+    background-color: #252934;
+}
+
