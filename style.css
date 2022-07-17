@@ -3,32 +3,38 @@
     padding: 0;
     font-family: 'Raleway', sans-serif;
 }
+body{
+    position: relative;
+}
 html{
     scroll-behavior: smooth;
 }
 
-a{
-    
+
+ul{
+    list-style: none;
 }
 
-#landing, #about{
+#landing, #about, #projects, #contact{
     height: 100vh;
 }
 
 /* Dark background color:#252934, Light Blue: #04c2c9, Pink: #e31b6d */
 
 #landing{
+    position: relative;
     background-color: #252934;
     color: white;
     font-size: 32pt;
     line-height: 36pt;
     text-align: center;
-    position: relative;
 }
 
 
 #about{
+    position: relative;
     background-color: white;
+    background-color: #252934;
 }
 
 .arrow{
@@ -70,10 +76,35 @@ a{
     top: 0;
     height: 100%;
     width: 100%;
+    opacity: 0;
 }
 
 .name{
     color: #e31b6d;
+}
+
+.nav{
+    background-color: #1b242f;
+    border-bottom: solid 3px #04c2c9 ;
+    width: 100%;
+    font-size: 16pt;
+    line-height: 18pt;
+    padding: 10px 20%;
+    color: white;
+    top: 0;
+    z-index: 99;
+
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-item{
+    text-decoration: none;
+    color: inherit;
 }
 
 .flex{
@@ -91,6 +122,10 @@ a{
 .overHidden{
     overflow-x: hidden;
 }
+
+
+
+
 .text-1{
     z-index: 2;
     position: absolute;

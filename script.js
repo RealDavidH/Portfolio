@@ -5,8 +5,8 @@ const ctx = canvas.getContext('2d');
 ctx.canvas.width = window.innerWidth;
 ctx.canvas.height = window.innerHeight;
 let starArray;
-
-
+//927
+//974
 function Star(x, y, size, color){
     this.x = x;
     this.y = y;
@@ -79,8 +79,7 @@ function randomColors(num){
 }
 
 
-arrayInit();
-animate();
+
 
 // Event listener to make sure the animation looks good 
 window.addEventListener('resize',
@@ -95,10 +94,10 @@ window.addEventListener('resize',
 let welcomeText = document.querySelector('.text-1');
 let beforeText = document.querySelector('.text-2');
 let landingText = document.querySelector('.text-3');
+let canvasElement = document.querySelector('.canvas');
 
 async function fadein(element, ms){
     let temp = 0;
-    console.log(element);
     while(element.style.opacity != 1){
         temp += 0.01;
         await sleep(ms)
@@ -113,7 +112,6 @@ async function fadeout(element, ms){
         await sleep(ms)
         element.style.opacity = temp;
     }
-    console.log('done')
     return temp;
 
 }
@@ -123,10 +121,31 @@ function sleep(ms) {
 }
 
 async function webPageStart(){
-    await fadein(welcomeText, 15);
-    await fadeout(welcomeText, 15);
-    await fadein(beforeText, 15);
-    await fadein(landingText, 10);
-    await fadeout(beforeText, 15);
+    await fadein(welcomeText, 12);
+    await fadein(canvasElement, 5);
+    await fadeout(welcomeText, 12);
+    await fadein(beforeText, 12);
+    await fadein(landingText, 0);
+    await fadeout(beforeText, 12);
 }
+
+window.addEventListener('scroll',(event) => {
+    let nav = document.querySelector('.nav')
+    let scrollPos = document.documentElement.scrollTop;
+    let aboutTop = document.getElementById('about').offsetHeight;
+    
+    console.log(aboutTop);
+    console.log(scrollPos)
+    if(nav.style.position != "fixed" && scrollPos >= aboutTop){
+        nav.style.position = "fixed"
+    } else if (nav.style.position == "fixed" && scrollPos < aboutTop){
+        nav.style.position = ""
+    }
+
+});
+
+
+
+arrayInit();
+animate();
 webPageStart();
