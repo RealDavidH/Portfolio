@@ -11,7 +11,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
     </head>
     <body>
-        <div class="overHidden">
             <!-- Landing -->
             <section id="landing" class="flex">
                 <div class="canvas">
@@ -32,13 +31,13 @@
             </section>
             
             <!-- About  -->
-            <section id="about">
+            <section id="about" class="tempBor">
                 <div class="nav">
                     <ul class="nav-list">
-                        <li><a class="nav-item" href="#landing" id="nav-1">Home</a> </li>
-                        <li><a class="nav-item" href="#about" id="nav-2">About</a> </li>
-                        <li><a class="nav-item" href="#project" id="nav-3">Projects</a></li>
-                        <li><a class="nav-item" href="#contact" id="nav-4">Contact</a></li>
+                        <li><a class="nav-item currentNav" href="#landing" id="nav-1" onclick="setNav(this)">Home</a> </li>
+                        <li><a class="nav-item" href="#about" id="nav-2" onclick="setNav(this)">About</a> </li>
+                        <li><a class="nav-item" href="#project" id="nav-3" onclick="setNav(this)">Projects</a></li>
+                        <li><a class="nav-item" href="#contact" id="nav-4" onclick="setNav(this)">Contact</a></li>
                     </ul>
                 </div>
                 <div class="about-content">
@@ -47,9 +46,13 @@
 
             </section>
             <!-- Project Page -->
-            <section id="project"></section>
+            <section id="project" class="tempBor">
+                <p>projects</p>
+            </section>
             <!-- Contact -->
-            <section id="contact"></section>
+            <section id="contact" class="tempBor">
+                <p>contacts</p>
+            </section>
         </div>
     </body>
     <script src="script.js"></script>

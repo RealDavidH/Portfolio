@@ -15,7 +15,7 @@ ul{
     list-style: none;
 }
 
-#landing, #about, #projects, #contact{
+#landing, #about, #project, #contact{
     height: 100vh;
 }
 
@@ -23,6 +23,10 @@ ul{
 
 #about{
     position: relative;
+}
+
+#contact{
+
 }
 
 #landing{
@@ -34,12 +38,12 @@ ul{
     text-align: center;
 }
 
+#projects{
 
-
+}
 
 .about-content{
     padding: 0px 20%;
-    border: dotted black;
 }
 
 .about-content > h2{
@@ -141,12 +145,10 @@ ul{
     position: absolute;
     opacity: 1;
 }
+
 .overHidden{
     overflow-x: hidden;
 }
-
-
-
 
 .text-1{
     z-index: 2;
@@ -155,14 +157,24 @@ ul{
     line-height: inherit;
     opacity: 0;
 }
+
 .text-2{
     font-size: inherit;
     line-height: inherit;
     z-index: 2;
     opacity: 0;
 }
+
 .text-3{
     opacity: 0;
     background-color: #252934;
+}
+
+.tempBor{
+    border: dotted red 2px;
+}
+
+.currentNav{
+    color: #e31b6d; 
 }
 
