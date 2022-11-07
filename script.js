@@ -91,10 +91,10 @@ window.addEventListener('resize',
 )
 
 
-let welcomeText = document.querySelector('.text-1');
-let beforeText = document.querySelector('.text-2');
-let landingText = document.querySelector('.text-3');
-let canvasElement = document.querySelector('.canvas');
+const welcomeText = document.querySelector('.text-1');
+const beforeText = document.querySelector('.text-2');
+const landingText = document.querySelector('.text-3');
+const canvasElement = document.querySelector('.canvas');
 
 async function fadein(element, ms){
     let temp = 0;
@@ -121,27 +121,22 @@ function sleep(ms) {
 }
 
 async function webPageStart(){
-    await fadein(welcomeText, 12);
-    await fadein(canvasElement, 5);
-    await fadeout(welcomeText, 12);
-    await fadein(beforeText, 12);
+    // await fadein(welcomeText, 0);
+    // await fadeout(welcomeText, 0);
+    // await fadein(beforeText, 0);
     await fadein(landingText, 0);
-    await fadeout(beforeText, 12);
+    // await fadeout(beforeText, 0);
 }
 
-window.addEventListener('scroll',(event) => {
+window.addEventListener('scroll', (event) => {
     let nav = document.querySelector('.nav')
     let scrollPos = document.documentElement.scrollTop;
     let aboutTop = document.getElementById('about').offsetHeight;
-    
-    console.log(aboutTop);
-    console.log(scrollPos)
-    if(nav.style.position != "fixed" && scrollPos >= aboutTop){
+    if(nav.style.position != "sticky" && scrollPos >= aboutTop + 1){ //Nav doesn't show when clicking to the about section
         nav.style.position = "fixed"
     } else if (nav.style.position == "fixed" && scrollPos < aboutTop){
         nav.style.position = ""
     }
-
 });
 
 
@@ -149,3 +144,12 @@ window.addEventListener('scroll',(event) => {
 arrayInit();
 animate();
 webPageStart();
+
+
+const qs = (selector) =>{
+    return document.querySelector(selector);
+}
+
+const id = (element) =>{
+    return document.getElementById(element);
+}

@@ -21,6 +21,10 @@ ul{
 
 /* Dark background color:#252934, Light Blue: #04c2c9, Pink: #e31b6d */
 
+#about{
+    position: relative;
+}
+
 #landing{
     position: relative;
     background-color: #252934;
@@ -31,10 +35,22 @@ ul{
 }
 
 
-#about{
-    position: relative;
-    background-color: white;
-    background-color: #252934;
+
+
+.about-content{
+    padding: 0px 20%;
+    border: dotted black;
+}
+
+.about-content > h2{
+    color: #e31b6d;
+    text-align: center;
+}
+
+.active{
+    color: #e31b6d;
+    font-size: inherit;
+    line-height: inherit;
 }
 
 .arrow{
@@ -44,6 +60,7 @@ ul{
     width: 20px;
     margin-left: 10px;
 }
+
 
 .btn-light{
     display: flex;
@@ -76,7 +93,6 @@ ul{
     top: 0;
     height: 100%;
     width: 100%;
-    opacity: 0;
 }
 
 .name{
@@ -93,6 +109,7 @@ ul{
     color: white;
     top: 0;
     z-index: 99;
+    transition: 0.5s;
 
 }
 
@@ -103,8 +120,13 @@ ul{
 }
 
 .nav-item{
+    transition: 0.5s;
     text-decoration: none;
     color: inherit;
+}
+
+.nav-item:hover{
+    color: #e31b6d;
 }
 
 .flex{
