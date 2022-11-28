@@ -42,6 +42,10 @@ ul{
 
 }
 
+#canvas{
+    max-width: 100%;
+}
+
 .about-content{
     padding: 0px 20%;
     display: flex;
@@ -104,7 +108,7 @@ ul{
 }
 
 .currentNav{
-    color: #e31b6d; 
+    color: #e31b6d !important; 
 }
 
 .meContent{
@@ -124,7 +128,7 @@ ul{
     flex: 2;
     margin: 20px 0px 20px 20px;
     text-align: center;
-    font-size: 16pt;
+    font-size: 14pt;
 }
 
 .name{
@@ -134,7 +138,7 @@ ul{
 .nav{
     background-color: #1b242f;
     border-bottom: solid 3px #04c2c9 ;
-    width: 100%;
+    max-width: 100%;
     font-size: 16pt;
     line-height: 18pt;
     padding: 10px 20%;
@@ -142,7 +146,6 @@ ul{
     top: 0;
     z-index: 99;
     transition: 0.5s;
-
 }
 
 .nav-list{
@@ -203,23 +206,38 @@ ul{
 }
 
 .tech{
-
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
 .techHeader{
-
+    font-size: 18pt;
+    line-height: 18pt;
+    color: #e31b6d;
 }
 
 .techBox{
-
+    border-radius: 5px;
+    min-width: 200px;
 }
 
 .techBoxHeader{
-
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: white; /* this needs to change it looks awful */
+    background-color: #04c2c9; /* maybe a lighter blue here */
+    padding: 20px;
+    text-align: center;
+    font-size: 16pt;
 }
 
-.textBoxContent{
-
+.techBoxContent{
+    font-size: 14pt;
+    padding: 5px;
+    border: solid 2px #1b242f;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 
