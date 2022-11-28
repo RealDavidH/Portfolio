@@ -1,66 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>David Hollinger</title>
-        <link rel="stylesheet" href="style.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
-    </head>
-    <body>
-            <!-- Landing -->
-            <section id="landing" class="flex">
-                <div class="canvas">
-                    <canvas id="canvas"></canvas>
-                </div>
-                <div class="text-1">Welcome</div>
 
-                <div class="landingText flex">
-                    <div class="text-2">I am</div>
-                    <div class="flex text-3">
-                        <p class="name">David Hollinger</p>
-                        <p>Full Stack Developer</p>
-                        <a class="btn-light"  id='aboutBtn' href="#about">Check out my work<img class="arrow" src="Assets/Svg/arrow.svg"/>
-                        </a>
-                    </div>
-                    
-                </div>
-            </section>
-            
-            <!-- About  -->
-            <section id="about" class="">
-                <div class="nav">
-                    <ul class="nav-list">
-                        <li><a class="nav-item currentNav" href="#landing" id="nav-1" onclick="setNav(this)">Home</a> </li>
-                        <li><a class="nav-item" href="#about" id="nav-2" onclick="setNav(this)">About</a> </li>
-                        <li><a class="nav-item" href="#project" id="nav-3" onclick="setNav(this)">Projects</a></li>
-                        <li><a class="nav-item" href="#contact" id="nav-4" onclick="setNav(this)">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="about-content">
-                    <h2 class="contentHeader">About</h2>
-                    <div class="meContent tempBor">
-                        <img class="mePicture tempBor" src="./Assets/imgs/placeHolder.jpg" alt="A picture of me">
-                        <p class="meParagraph tempBor" > Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ratione atque vel non possimus voluptate cupiditate et nostrum, a laborum? Obcaecati, eum praesentium? Nemo ducimus atque voluptatem deserunt! Minus, saepe. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat hic corrupti blanditiis modi distinctio minima voluptatem ullam a beatae repellendus quos in iusto aspernatur, incidunt sint adipisci. Eos, sunt quas.</p>
-                    </div>
-                    <div class="techContent tempBor">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>David Hollinger</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
+</head>
 
-                    </div>
-                </div>
-
-            </section>
-            <!-- Project Page -->
-            <section id="project" class="tempBor">
-                <p>projects</p>
-            </section>
-            <!-- Contact -->
-            <section id="contact" class="tempBor">
-                <p>contacts</p>
-            </section>
+<body>
+    <!-- Landing -->
+    <section id="landing" class="flex">
+        <div class="canvas">
+            <canvas id="canvas"></canvas>
         </div>
-    </body>
-    <script src="script.js"></script>
+        <div class="text-1">Welcome</div>
+
+        <div class="landingText flex">
+            <div class="text-2">I am</div>
+            <div class="flex text-3">
+                <p class="name">David Hollinger</p>
+                <p>Full Stack Developer</p>
+                <a class="btn-light" id='aboutBtn' href="#about">Check out my work<img class="arrow"
+                        src="Assets/Svg/arrow.svg" />
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About  -->
+    <section id="about">
+        <div class="nav">
+            <ul class="nav-list">
+                <li><a class="nav-item currentNav" href="#landing" id="nav-1" onclick="setNav(this)">Home</a> </li>
+                <li><a class="nav-item" href="#about" id="nav-2" onclick="setNav(this)">About</a> </li>
+                <li><a class="nav-item" href="#project" id="nav-3" onclick="setNav(this)">Projects</a></li>
+                <li><a class="nav-item" href="#contact" id="nav-4" onclick="setNav(this)">Contact</a></li>
+            </ul>
+        </div>
+        <div class="about-content">
+            <p class="contentHeader">About</p>
+            <div class="meContent">
+                <img class="mePicture" src="./Assets/imgs/placeHolder.jpg" alt="A picture of me">
+                <p class="meParagraph7"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ratione
+                    atque vel non possimus voluptate cupiditate et nostrum, a laborum? Obcaecati, eum praesentium? Nemo
+                    ducimus atque voluptatem deserunt! Minus, saepe. Lorem ipsum dolor, sit amet consectetur adipisicing
+                    elit. Placeat hic corrupti blanditiis modi distinctio minima voluptatem ullam a beatae repellendus
+                    quos in iusto aspernatur, incidunt sint adipisci. Eos, sunt quas.</p>
+            </div>
+            <p class="techHeader">Proficient Technologies</p>
+            <div class="tech">
+                <div class="techBox ">
+                    <div class="techBoxHeader">
+                        <p>Frontend</p>
+                    </div>
+                    <div class="techBoxContent">
+                    </div>
+                </div>
+                <div class="techBox">
+                    <div class="techBoxHeader">
+                        <p>Backend</p>
+                    </div>
+                    <div class="techBoxContent">
+                    </div>
+                </div>
+                <div class="techBox">
+                    <div class="techBoxHeader">
+                        <p>Database</p>
+                    </div>
+                    <div class="techBoxContent">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Project Page -->
+    <section id="project" class="tempBor">
+        <p>projects</p>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="tempBor">
+        <p>contacts</p>
+    </section>
+    </div>
+</body>
+<script src="script.js"></script>
+
 </html>

@@ -91,7 +91,6 @@ Star.prototype.update = function () {
     if (!this.isShrink) {
         this.size += 0.01;
     }
-
     this.draw();
 };
 
@@ -132,7 +131,9 @@ let prevElement = document.getElementsByClassName("currentNav")[0];
 function setNav(element) {
     prevElement.classList.remove("currentNav");
     element.classList.add("currentNav");
+    console.log(prevElement, "prev element");
     prevElement = element;
+    console.log(prevElement, "new prev")
 }
 
 //Did animations in js cause made more sense than css
@@ -171,10 +172,3 @@ arrayInit();
 animate();
 webPageStart();
 
-const qs = (selector) => {
-    return document.querySelector(selector);
-};
-
-const id = (element) => {
-    return document.getElementById(element);
-};

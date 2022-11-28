@@ -48,9 +48,6 @@ ul{
     flex-direction: column;
 }
 
-
-
-
 .active{
     color: #e31b6d;
     font-size: inherit;
@@ -103,6 +100,11 @@ ul{
     text-align: center;
     color: #e31b6d;
     border-bottom: solid 3px #e31b6d;
+    font-size: 20pt;
+}
+
+.currentNav{
+    color: #e31b6d; 
 }
 
 .meContent{
@@ -200,7 +202,26 @@ ul{
     border: dotted red 2px;
 }
 
-.currentNav{
-    color: #e31b6d; 
+.tech{
+
 }
+
+.techHeader{
+
+}
+
+.techBox{
+
+}
+
+.techBoxHeader{
+
+}
+
+.textBoxContent{
+
+}
+
+
+
 
