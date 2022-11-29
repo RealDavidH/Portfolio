@@ -47,8 +47,8 @@ window.addEventListener("scroll", (e) => {
 
     if (nav.style.position != "sticky" && scrollPos >= aboutTop + 1) {
         //Nav doesn't show when clicking to the about section
-        nav.style.position = "fixed";
-    } else if (nav.style.position == "fixed" && scrollPos < aboutTop) {
+        nav.style.position = "sticky";
+    } else if (nav.style.position == "sticky" && scrollPos < aboutTop) {
         nav.style.position = "";
     }
 });

@@ -111,6 +111,13 @@ ul{
     color: #e31b6d !important; 
 }
 
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .meContent{
     display: flex;
     align-items: center;
@@ -164,12 +171,7 @@ ul{
     color: #e31b6d;
 }
 
-.flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+
 
 .landingText{
     z-index: 2;
