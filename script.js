@@ -45,12 +45,16 @@ window.addEventListener("scroll", (e) => {
         prevElement = document.getElementById("nav-4");
     }
 
-    if (nav.style.position != "sticky" && scrollPos >= aboutTop + 1) {
-        //Nav doesn't show when clicking to the about section
-        nav.style.position = "sticky";
-    } else if (nav.style.position == "sticky" && scrollPos < aboutTop) {
-        nav.style.position = "";
-    }
+    //!!!Nav bar bugs!!!
+    //Nav bar is super shakey when switching
+    //It covers The headers when it switches
+
+    // if (!nav.classList.contains("sticky") && scrollPos >= aboutTop + 1) {
+    //     //Nav doesn't show when clicking to the about section
+    //     nav.classList.add("sticky")
+    // } else if (nav.classList.contains("sticky") && scrollPos < aboutTop) {
+    //     nav.classList.remove("sticky")
+    // }
 });
 
 // Event listener to make sure the animation looks good
@@ -131,9 +135,7 @@ let prevElement = document.getElementsByClassName("currentNav")[0];
 function setNav(element) {
     prevElement.classList.remove("currentNav");
     element.classList.add("currentNav");
-    console.log(prevElement, "prev element");
     prevElement = element;
-    console.log(prevElement, "new prev")
 }
 
 //Did animations in js cause made more sense than css
