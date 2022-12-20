@@ -27,6 +27,7 @@ ul{
 }
 
 #contact{
+    position: relative;
     background-color: #252934;
 }
 
@@ -76,8 +77,6 @@ ul{
     background: linear-gradient(#1b242f, #1b242f 50%, #04c2c9 50%, #04c2c9);
     background-size: 100% 200%;
     transition: all 0.5s;
-
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,6 +158,7 @@ ul{
     padding: 5px 0px 5px 0px;
     min-width: 100%;
 }
+
 .contactForm textarea{
     border: none;
     font-size: 14pt;
@@ -180,7 +180,6 @@ ul{
     font-size: 16pt;
     align-self: flex-end;
     cursor: pointer;
-    
 }
 
 .formBtn:hover{
@@ -188,8 +187,43 @@ ul{
 }
 
 
+.footer{
+    background-color: #1b242f;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    min-width: 100%;
+    height: 50px;
+    padding-top: 10px;
+}
 
+.footBtn{
+    background: linear-gradient(#e31b6d, #e31b6d 50%, #04c2c9 50%, #04c2c9);
+    background-size: 100% 200%;
+    transition: all 0.5s;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -20px;
+    text-align: center;
+}
 
+.footArrow{
+    transition: all ease-in 0.3s;
+}
+
+.footBtn:hover{
+    background-position: 100% 100%;
+}
+
+.footBtn:hover .footArrow{
+    transform: translate(0, -100px);
+}
+
+.footSocial{
+    margin-left: 10px;
+}
 
 .flex{
     display: flex;
